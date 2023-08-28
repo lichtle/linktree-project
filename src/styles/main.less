@@ -1,6 +1,113 @@
-@import "variables.less";
+@import "maps.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+.marginBottom8 {
+  margin-bottom: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
 body {
-  background-color: @corDeFundo;
-  color: @corDeTexto;
+  background: url(https://images.unsplash.com/photo-1600673645627-1c47394132ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+  color: #colors[text];
+}
+
+// Foto de Milad Fakurian - https://unsplash.com/pt-br/@fakurian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 960px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+
+  @media @breakpointTablet {
+    max-width: 80%;
+  }
+
+  @media @breakpointMobile {
+    max-width: 70%;
+  }
+}
+
+header {
+  padding-bottom: 24px;
+
+  .profile-pic {
+    width: 120px;
+    display: block;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+  }
+}
+
+.profile-bio {
+  text-align: center;
+
+  &-main-title {
+    .marginBottom8();
+  }
+
+  &-secondary-title {
+    font-size: 18px;
+    .marginBottom8();
+  }
+
+  &-description {
+    opacity: 0.7;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
+
+  img {
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+
+.projects-list {
+  margin-top: 32px;
+
+  &-item {
+    a {
+      display: block;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      background-color: #colors[button];
+      text-align: center;
+      text-decoration: none;
+      color: #colors[text];
+      font-weight: bold;
+      border-radius: 30px;
+      border: 2px solid #colors[button];
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        background-color: #colors[opacity];
+      }
+    }
+  }
 }

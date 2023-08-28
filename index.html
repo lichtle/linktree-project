@@ -5,26 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Links - Lichtle</title>
     <link rel="stylesheet" href="build/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <img src="https://via.placeholder.com/200x200" alt="Foto de perfil" />
-      <h1>Página da Lichtle</h1>
-      <h2>Desenvolvedora Front-End</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea officiis
-        modi voluptatum vel nemo, consectetur autem, fugit illo cupiditate,
-        laborum voluptatibus error aliquam quidem rem explicabo vero aperiam
-        minima sequi.
-      </p>
+    <div class="container">
+      <header>
+        <img
+          class="profile-pic"
+          src="src/images/profile.jpeg"
+          alt="Foto de perfil"
+        />
+        <div class="profile-bio">
+          <h1 class="profile-bio-main-title">Leticia Fernandes</h1>
+          <h2 class="profile-bio-secondary-title">Desenvolvedora Front-End</h2>
+          <p class="profile-bio-description">
+            Gastróloga mineira de 24 anos e estudante de Desenvolvimento Web. :)
+          </p>
+        </div>
+      </header>
       <nav>
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">LinkedIn</a></li>
-          <li><a href="">GitHub</a></li>
-          <li><a href="">E-mail</a></li>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.instagram.com/frontendkitty/" target="_blank"
+              ><img src="src/images/instagram.svg" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/leticianegreiros/"
+              target="_blank"
+              ><img src="src/images/linkedin.svg" alt="LinkedIn"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/lichtle" target="_blank"
+              ><img src="src/images/github.svg" alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:leticia.negreiros@outlook.com" target="_blank"
+              ><img src="src/images/mail.svg" alt="E-mail"
+            /></a>
+          </li>
         </ul>
       </nav>
-    </header>
+      <nav class="projects-nav">
+        <ul class="projects-list">
+          <li class="projects-list-item">
+            <a href="https://loja-amor-86j34xwik-lichtle.vercel.app/" target="_blank"
+              >Loja Amor Pet</a
+            >
+          </li>
+          <li class="projects-list-item">
+            <a href="https://lichtle.github.io/projeto-cards-genshin/" target="_blank"
+              >Genshin Impact Cards</a
+            >
+          </li>
+          <li class="projects-list-item">
+            <a href="https://lichtle.github.io/projeto-the-last-of-us/" target="_blank"
+              >The Last of Us Landing Page</a
+            >
+          </li>
+          <li class="projects-list-item">
+            <a href="https://lichtle.github.io/projeto-glossario-dev/" target="_blank"
+              >Glossário Dev</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
